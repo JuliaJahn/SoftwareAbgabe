@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speakable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="jquery/jquery.mobile.icons-1.4.5.min.css" />
+    <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+</head>
+
+<body>
+    <div data-role="page" id="p1">
+        <div id="head" data-role="header">
+            <h1>Speakable</h1>
+        </div>
+        <div data-role="content">
+            <div id="text">Choose your topic!</div>
+            <button class="ui-btn" id="speakerP1">Read out</button>
+            <p><a href="#l1p1" data-role="button" class="button" data-transition="slide">Level 1: food</a></p>
+            <p><a href="#l2p1" data-role="button" class="button " data-transition="slide">Level 2: colours</a></p>
+            <p><a href="#l3p1" data-role="button" class="button" data-transition="slide">Level 3: animals</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 1, Page 1-->
+    <div data-role="page" id="l1p1">
+        <div id="head" data-role="header">
+            <h2>Level 1, Exercise 1</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">What does "bread" mean?</div>
+            <button class="ui-btn" id="speakerL1P1">Read out</button>    
+            <div class="ui-grid-a">
+                <div class="ui-block-a" id="imgButton"><a href="#tryl1p1"><img src="images/Ei.jpg"></a></div>
+                <div class="ui-block-b" id="answerBread"><a href="#goodl1p1"><img src="images/Brot.jpg"/></a></div>
+                <div class="ui-block-a" id="imgButton"><a href="#tryl1p1"><img src="images/Wasser.jpg"/></a></div>
+                <div class="ui-block-b" id="imgButton"><a href="#tryl1p1"><img src="images/Apfel.jpg"/></a></div>
+            </div>
+            </div>
+        </div>
+
+    <!--Level 1, Page 1 Solution-->
+    <div data-role="page" id="tryl1p1">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            Sorry, this was not the correct answer.
+            <div>Question: What does "bread" mean?</div>
+            <div>Answer: "Brot"</div>
+            <a href="#l1p2"><button class="button">Go to the next Exercise!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl1p1">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            You picked the right answer! Good job!
+            <a href="#l1p2"><button class="button">Go to the next Exercise!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 1, Page 2-->
+    <div data-role="page" id="l1p2">
+        <div id="head" data-role="header">
+            <h2>Level 1, Exercise 2</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">How do you say "Ei" in English?</div>
+            <button class="ui-btn" id="speakerL1P2">Read out</button> 
+            <p><a href="#tryl1p2" data-role="button" class="button" data-transition="slide">bread</a></p>
+            <p><a href="#tryl1p2" data-role="button" class="button" data-transition="slide">lemon</a></p>
+            <p><a href="#goodl1p2" data-role="button" class="button" data-transition="slide" id="answerEgg">egg</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 1, Page 2 Solution-->
+    <div data-role="page" id="tryl1p2">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            That was not the right answer. 
+            <div>Question: How do you say "Ei" in English?</div>
+            <div>Answer: Egg</div>
+            <a href="#l1p3"><button class="button">Try the next Exercise!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl1p2">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            You are right!
+            <a href="#l1p3"><button class="button">Try the next Exercise!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 1, Page 3-->
+    <div data-role="page" id="l1p3">
+        <div id="head" data-role="header">
+            <h2>Level 1, Excercise 3</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">Click the healthy food! Hint: You have to click two of the pictures.</div>
+            <button class="ui-btn" id="speakerL1P3">Read out</button> 
+            <div class="ui-grid-a">
+                <div class="ui-block-a" id="multipleCarrot"><img src="images/Carrot.jpg"></div>
+                <div class="ui-block-b" id="chocolate"><img src="images/Chocolate.jpg"/></div>
+                <div class="ui-block-a" id="lollipops"><img src="images/Lollipops.jpg"/></div>
+                <div class="ui-block-b" id="multipleApple"><img src="images/Apple.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer"></div>
+    </div>
+
+    <!--Level 1, Page 3 Solution-->
+    <div data-role="page" id="tryl1p3">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            That was not right. You had <span id="success2"></span> answers right!
+            <div>Task: Click the healthy food!</div>
+            <div>Answer: Carrot and Apple</div>
+            <a href="#l2p1"><button class="button">Go to Level 2!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl1p3">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            You finished Level 1! You got <span id="success1"></span> right!
+            <a href="#l2p1"><button class="button">Go to Level 2!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 2, Page 1-->
+    <div data-role="page" id="l2p1">
+        <div id="head" data-role="header">
+            <h2>Level 2, Exercise 1</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">What colour is that?</div>
+            <button class="ui-btn" id="speakerL2P1">Read out</button> 
+            <img src="images/Kreis.jpg" id="image">
+            <p><a href="#goodl2p1" data-role="button" class="button" data-transition="slide" id="answerRed">red</a></p>
+            <p><a href="#tryl2p1" data-role="button" class="button" data-transition="slide">green</a></p>
+            <p><a href="#tryl2p1" data-role="button" class="button" data-transition="slide">blue</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 2, Page 1 Solution-->
+    <div data-role="page" id="tryl2p1">
+        <div id="head" data-role="header">
+            <h2>Level 1</h2>
+        </div>
+        <div data-role="content">
+            That was the wrong choice.
+            <div>Question: What colour is that?<img src="images/Kreis.jpg" id="image"></div>
+            <div>Answer: Red</div>
+            <a href="#l2p2"><button class="button">Try the next Exercise!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl2p1">
+        <div id="head" data-role="header">
+            <h2>Level 2</h2>
+        </div>
+        <div data-role="content">
+            Amazing! That was the right answer!
+            <a href="#l2p2"><button class="button">Try the next Exercise!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 2, Page 2-->
+    <div data-role="page" id="l2p2">
+        <div id="head" data-role="header">
+            <h2>Level 2, Exercise 2</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">What colour is the apple?</div>
+            <button class="ui-btn" id="speakerL2P2">Read out</button> 
+            <img src="images/Apfel2.jpg" id="image">
+            <p><a href="#tryl2p2" data-role="button" class="button" data-transition="slide">The apple is red</a></p>
+            <p><a href="#goodl2p2" data-role="button" class="button" data-transition="slide" id="answerGreen">The apple is green</a></p>
+            <p><a href="#tryl2p2" data-role="button" class="button" data-transition="slide">The apple is yellow</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 2, Page 2 Solution-->
+    <div data-role="page" id="tryl2p2">
+        <div id="head" data-role="header">
+            <h2>Level 2</h2>
+        </div>
+        <div data-role="content">
+            That was not right.
+            <div>Question: What colour is the apple? <img src="images/Apfel2.jpg" id="image"></div>
+            <div>Answer: The apple is green</div>
+            <a href="#l2p3"><button class="button">Try Exercise 3!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl2p2">
+        <div id="head" data-role="header">
+            <h2>Level 2</h2>
+        </div>
+        <div data-role="content">
+            You are right!
+            <a href="#l2p3"><button class="button">Try Exercise 3!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 2, Page 3-->
+    <div data-role="page" id="l2p3">
+        <div id="head" data-role="header">
+            <h2>Level 2, Exercise 3</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">Click all things that are yellow! Hint: You have to click two of the pictures.</div>
+            <button class="ui-btn" id="speakerL2P3">Read out</button>    
+            <div class="ui-grid-a">
+                <div class="ui-block-a" id="multipleDuck"><img src="images/Duck.jpg"/></div>
+                <div class="ui-block-b" id="multipleTaxi"><img src="images/Taxi.jpg"/></div>
+                <div class="ui-block-a" id="strawberry"><img src="images/Strawberry.jpg"/></div>
+                <div class="ui-block-b" id="tomato"><img src="images/Tomato.jpg"/></div>
+            </div>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 2, Page 3 Solution-->
+    <div data-role="page" id="tryl2p3">
+        <div id="head" data-role="header">
+            <h2>Level 2</h2>
+        </div>
+        <div data-role="content">
+            Sorry, that was not correct. You got <span id="success3"></span> right!
+            <div>Task: Click all things that are yellow!</div>
+            <div>Answer: Duck and Taxi</div>
+            <a href="#l3p1"><button class="button">Try Level 3!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl2p3">
+        <div id="head" data-role="header">
+            <h2>Level 2</h2>
+        </div>
+        <div data-role="content">
+            You are doing great and got <span id="success4"></span> right! Have fun with Level 3!
+            <a href="#l3p1"><button class="button">Try Level 3!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 3, Page 1-->
+    <div data-role="page" id="l3p1">
+        <div id="head" data-role="header">
+            <h2>Level 3, Exercise 1</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">Click all animals that are grey! Hint: You have to click two of the pictures.</div>
+            <button class="ui-btn" id="speakerL3P1">Read out</button>  
+            <div class="ui-grid-a">
+                <div class="ui-block-a" id="multipleElephant"><img src="images/Elephant.jpg"/></div>
+                <div class="ui-block-b" id="mouse"><img src="images/Mouse.jpg"/></div>
+                <div class="ui-block-a" id="multipleRabbit"><img src="images/Rabbit.jpg"/></div>
+                <div class="ui-block-b" id="turtle"><img src="images/Turtle.jpg"/></div>
+            </div>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 3, Page 1 Solution-->
+    <div data-role="page" id="tryl3p1">
+        <div id="head" data-role="header">
+            <h2>Level 3</h2>
+        </div>
+        <div data-role="content">
+            That was not the right answer.
+            <div>Task: Click all animals that are grey!</div>
+            <div>Answer: Elephant and Rabbit</div>
+            <a href="#l3p2"><button class="button">Try Exercise 2!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl3p1">
+        <div id="head" data-role="header">
+            <h2>Level 3</h2>
+        </div>
+        <div data-role="content">
+            Good choice! Go on with the next Exercise!
+            <a href="#l3p2"><button class="button">Try Exercise 2!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 3, Page 2-->
+    <div data-role="page" id="l3p2">
+        <div id="head" data-role="header">
+            <h2>Level 3, Exercise 2</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">How can you say "I own a cat" in different words?</div>
+            <button class="ui-btn" id="speakerL3P2">Read out</button>  
+            <p><a href="#tryl3p2" data-role="button" class="button" data-transition="slide">I have a dog</a></p>
+            <p><a href="#tryl3p2" data-role="button" class="button" data-transition="slide">I have a bird</a></p>
+            <p><a href="#goodl3p2" data-role="button" class="button" data-transition="slide" id="answerCat">I have a cat</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 3, Page 2 Solution-->
+    <div data-role="page" id="tryl3p2">
+        <div id="head" data-role="header">
+            <h2>Level 3</h2>
+        </div>
+        <div data-role="content">
+            That was wrong.
+            <div>Question: How can you say "I own a cat" in different words?</div>
+            <div>Answer: I have a cat</div>
+            <a href="#l3p3"><button class="button">Try Exercise 3!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl3p2">
+        <div id="head" data-role="header">
+            <h2>Level 3</h2>
+        </div>
+        <div data-role="content">
+            Perfect!
+            <a href="#l3p3"><button class="button">Try Exercise 3!</button></a>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <!--Level 3, Page 3-->
+    <div data-role="page" id="l3p3">
+        <div id="head" data-role="header">
+            <h2>Level 3, Exercise 3</h2>
+        </div>
+        <div data-role="content">
+            <div id="text">What does "dog" mean?</div>
+            <button class="ui-btn" id="speakerL3P3">Read out</button>
+            <div class="ui-grid-a">
+                <div class="ui-block-a" id="imgButton1"><a href="#tryl3p3"><img src="images/Katze.jpg"/></a></div>
+                <div class="ui-block-b" id="imgButton2"><a href="#tryl3p3"><img src="images/Maus.jpg"/></a></div>
+                <div class="ui-block-a" id="answerDog"><img src="images/Hund.jpg"/></a></div>
+                <div class="ui-block-b" id="imgButton3"><a href="#tryl3p3"><img src="images/Ente.jpg"/></a></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Level 3, Page 3 Solution-->
+    <div data-role="page" id="tryl3p3">
+        <div id="head" data-role="header">
+            <h2>Level 3</h2>
+        </div>
+        <div data-role="content">
+            Sorry, this was not the correct answer. You got <span id="success5"></span> right!
+            <div>Question: What does "dog" mean?</div>
+            <div>Answer: "Hund"</div>
+            <div>You played the whole game!</div>
+            <p><a href="#p1" data-role="button" class="button" data-transition="slide">Go back to the start</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <div data-role="page" id="goodl3p3">
+        <div id="head" data-role="header">
+            <h2>Level 3</h2>
+        </div>
+        <div data-role="content">
+            You rocked the whole game! And got <span id="success6"></span> right in Level 3!
+            <p><a data-role="button" class="button" id="restart" data-transition="slide">Go back to the start</a></p>
+        </div>
+        <div data-role="footer"></div>
+    </div>
+
+    <script src="jquery/jquery-1.8.0.min.js"></script>
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/textToSpeech.js"></script>
+    <script src="js/index.js"></script>
+    <script src= "cordova.js"></script>
+
+</body>
+
+</html>
